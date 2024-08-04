@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="../static_/styles.css">
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent the default form submission
+      window.location.href = 'createrequest.html'; // Redirect to the new page
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">HandiWork</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Are You a Trades Person?</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <h2>Signup</h2>
+    <form action="/submit_signup" method="POST" onsubmit="handleFormSubmit(event)">
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" required>
+        <label>Phone Number</label>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Signup">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="signin.html">Login</a></h3>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

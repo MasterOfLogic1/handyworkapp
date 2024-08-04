@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #4070f4;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+nav .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+nav .navbar .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .menu li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.content {
+  margin-left: 220px; /* To avoid overlap with the nav */
+  padding: 20px;
+  width: 80%;
+}
+
+form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+
+.input-box {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-box:last-child {
+  margin-right: 0;
+}
+
+.input-box input,
+.input-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.input-box label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-box button {
+  text-align: center;
+}
+
+.input-box.button {
+  margin-top: 20px; /* Space above the button */
+  text-align: center; /* Center the button within its container */
+}
+
+.input-box.button input[type="submit"] {
+  width: auto; /* Adjust width to fit the content */
+  padding: 10px 20px; /* Adjust padding to control button size */
+  font-size: 16px; /* Adjust font size for better appearance */
+  font-weight: 600; /* Bold text */
+  background: #17d317; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+.input-box.button input[type="submit"]:hover {
+  background: #3dc636; /* Darker background on hover */
+}
+
+/* Add these styles to your existing CSS */
+
+.profile-picture-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.profile-picture-container img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture-container input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+
+
+
+
+
+
+
+/* Add these styles to your existing CSS */
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.request-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.request-item p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #17d317;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.message-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #1512ee;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+
+.report-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #e60b21;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.review-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #f4ec08;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.quote-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #d78509;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.view-button:hover {
+  background: #3dc636;
+}
+
+
+/* Add these styles to your existing CSS */
+
+.navbar .menu .active a {
+  color: #fff; /* Change color or add any other styles to indicate the active state */
+  font-weight: 600;
+  background: #333; /* Optional: add a background color to highlight */
+  border-radius: 5px; /* Optional: add border-radius for a rounded look */
+}
+
+.navbar .menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px; /* Optional: consistent styling for all menu items */
+  transition: background 0.3s;
+}
+
+.navbar .menu li a:hover {
+  background: #575757; /* Optional: highlight on hover */
+}

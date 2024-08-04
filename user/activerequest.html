@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Requests</title>
+  <link rel="stylesheet" href="../static_/styles2.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">HandiWork</a>
+      </div>
+      <ul class="menu">
+        <li><a href="createrequest.html">Create Request</a></li>
+        <li><a href="activerequest.html">Active Requests</a></li>
+        <li><a href="completedrequest.html">Completed Requests</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h2>Active Requests</h2>
+    <div class="request-list">
+      <div class="request-item">
+        <h3>I need a bowl of Soup</h3>
+        <p>Category: Cooking</p>
+        <p>Source Location: Ikeja,Lagos, Nigeria</p>
+        <p>would be done by : Bola Anile</p>
+        <p>Estimated Cost: 2,000 NGN</p>
+        <a href="viewrequest1.html" class="view-button">View Details</a>
+        <a href="viewrequest1.html" class="message-button">Message</a>
+      </div>
+      <div class="request-item">
+        <h3>Broken Wooden Door</h3>
+        <p>Category: Wood Work</p>
+        <p>Source Location: Ikeja,Lagos, Nigeria</p>
+        <p>Date Created: August 1, 2024</p>
+        <a href="viewrequest1.html" class="view-button">View Details</a>
+        <a href="viewrequest1.html" class="quote-button">View Quotes</a>
+      </div>
+      <div class="request-item">
+        <h3>My Tank is Leaking</h3>
+        <p>Category: Plumbing</p>
+        <p>Source Location: Federal Hosuing,Calabar, Nigeria</p>
+        <p>Date Created: August 3, 2024</p>
+        <a href="viewrequest2.html" class="view-button">View Details</a>
+        <a href="viewrequest1.html" class="quote-button">View Quotes</a>
+      </div>
+      <!-- Add more request items as needed -->
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var currentPage = window.location.pathname.split('/').pop(); // Get current page filename
+    var menuItems = document.querySelectorAll('.navbar .menu li a');
+
+    menuItems.forEach(function(item) {
+      if (item.getAttribute('href') === currentPage) {
+        item.parentElement.classList.add('active');
+      }
+    });
+  });
+  </script>
+</body>
+</html>
